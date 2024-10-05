@@ -1,2 +1,9 @@
 # ask for the height of the triangle
 # display the output
+
+n = int(input("Enter the height of the triangle: "))
+
+for i in range(n, 0, -1):  # Start from n and go down to 1
+    for j in range(i):  # Iterate from 0 to i (exclusive)
+        print("*", end=" ")  # Print '*' with space, no newline
+    print()  # Move to the next line after each row
